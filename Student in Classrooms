@@ -1,0 +1,14 @@
+#Basic Problem Solving with Classes
+class Student():
+    def __init__(self,name, marks):
+        self.name=name
+        self.marks=marks
+    def get_grade(self,grade):
+        self.grade=grade
+        
+class Classroom(Student):
+    def __init__(self):
+        Student.__init__(self, name, marks)
+        name=self.name
+        marks=self.marks
+        
