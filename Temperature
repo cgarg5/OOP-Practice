@@ -1,0 +1,14 @@
+#Practicing OOB concepts
+class Temperature():
+    def __init__(self, cel):
+        self.cel=cel
+    
+    def to_faren(self):
+        return ((self.cel*9)/5)+32
+    
+    def to_k(self):
+        return self.cel +273.15
+
+t1=Temperature(33)
+t1.to_faren()
+t1.to_k()
