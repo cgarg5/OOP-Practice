@@ -1,0 +1,25 @@
+#Improving basic problem solving with Classes
+class Book():
+    def __init__(self,title,author,pages):
+        self.title=title
+        self.author=author
+        self.pages=pages
+        
+class Library():
+    def __init__(self):
+        self.all_books=[]
+    def add_book(self,b):
+        self.all_books.append(b)
+    def display(self):
+        for x in self.all_books:
+            print(f'{x.title}\n')
+        
+b1=Book('You Can Win', 'Shiv Khera', 230)
+b2=Book('The Meaning of Life', 'Victor E Frankl', 300) 
+b3=Book('No more Mr Nice Guy', 'Some Author', 170)
+L1=Library()
+L1.add_book(b1)
+L1.add_book(b2)
+L1.add_book(b3)
+L1.display()
+
