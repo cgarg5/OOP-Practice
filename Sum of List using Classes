@@ -1,0 +1,15 @@
+#Recursion Refresher with Objects
+class MathOps():
+    def __init__(self):
+        pass
+    
+    def sum_list(self,mylist):
+        if not mylist:
+            return 0
+        else:
+            return mylist.pop()+ self.sum_list(mylist)
+    
+m1=MathOps()
+l1=[3,6,10]
+m1.sum_list(l1)
+        
